@@ -7,13 +7,17 @@ Primeiro, instale os módulos necessários:
 ```bash
 npm install
 ```
-Em seguida, inicie o projeto:
+Em seguida, inicie o cliente Prisma:
 
 ```bash
-npm run dev
+npx prisma generate
+```
+Agora, sincronize o schema Prisma com o banco MongoDB:
+```
+npx prisma db push
 ```
 
-Abra [http://localhost:3000](http://localhost:3000) para ver a visualização web do site.
+Abra [http://localhost:3000](http://localhost:3000) para ver a visualização web do site!
 
 ### Feito por Igor, TADS 5
 
